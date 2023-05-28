@@ -1,0 +1,30 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Blocky/Trees/Cactus</texPath>
+        <shadowData>
+          <volume>(0.3, 0.6, 0.3)</volume>
+          <offset>(0,0,-0.3)</offset>
+        </shadowData>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+    <value>
+      <visualSizeRange>1.0~2.0</visualSizeRange>
+      <choppedThingDef IsNull="True" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Cactus_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>
