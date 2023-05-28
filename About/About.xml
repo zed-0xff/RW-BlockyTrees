@@ -10,14 +10,6 @@
   <description>FIXME
 
 [url=https://ko-fi.com/K3K81Z3W5][img]https://i.imgur.com/Utx6OIH.png[/img][/url]</description>
-  <modDependencies>
-    <li>
-      <packageId>Blocky.Props</packageId>
-      <displayName>Blocky Props</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/FIXME</steamWorkshopUrl>
-      <downloadUrl>FIXME</downloadUrl>
-    </li>
-  </modDependencies>
   <loadAfter>
     <li>Blocky.Props</li>
   </loadAfter>
