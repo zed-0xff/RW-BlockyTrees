@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Oak</defName>
+    <label>chopped oak stump</label>
+    <graphicData>
+      <texPath>Blocky/Trees/Oak_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+</Defs>
