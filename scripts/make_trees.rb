@@ -71,13 +71,17 @@ class TreeMaker
       dst.copy_from(leaves, dst_x: 48,      dst_y: 8)
       5.times { dst.copy_from(leaves, dst_x: 16 + rand(64), dst_y: rand(48)) }
     when 'Spruce'
-      dst.copy_from(leaves, dst_x: 56,      dst_y: 0, dst_width: 16, src_width: 32, dst_height: 16)
-      dst.copy_from(leaves, dst_x: 48,      dst_y: 8)
-      dst.copy_from(leaves, dst_x: 48,      dst_y: 40)
-      dst.copy_from(leaves, dst_x: 48-10, dst_y: 8+16)
-      dst.copy_from(leaves, dst_x: 48+10, dst_y: 8+16)
-      dst.copy_from(leaves, dst_x: 48-20, dst_y: 8+32)
-      dst.copy_from(leaves, dst_x: 48+20, dst_y: 8+32)
+      # make it smaller
+      dst.copy_from(leafless, dst_y: 11, src_height:32, copy_transparent: true)
+      dst.copy_from(leafless, dst_y: 22, src_height:32, copy_transparent: true)
+      y = 16
+      dst.copy_from(leaves, dst_x: 56,      dst_y: y+4, dst_width: 16, src_width: 32, dst_height: 16)
+      dst.copy_from(leaves, dst_x: 48,      dst_y: y+4+rand(8))
+      dst.copy_from(leaves, dst_x: 48-10,   dst_y: y+8+20+rand(8)-4)
+      dst.copy_from(leaves, dst_x: 48+10,   dst_y: y+8+20+rand(8)-4)
+      dst.copy_from(leaves, dst_x: 48-20,   dst_y: y+8+40+rand(8)-4, src_height: 16)
+      dst.copy_from(leaves, dst_x: 48,      dst_y: y+40+rand(8)-4, src_height: 16)
+      dst.copy_from(leaves, dst_x: 48+20,   dst_y: y+8+40+rand(8)-4, src_height: 16)
     else
       step = type == 'Pine' ? 16 : 32
       dst.copy_from(leaves, dst_x: 48,      dst_y: 4+rand(12))
@@ -113,8 +117,8 @@ class TreeMaker
     when 'Mangrove'
       5.times { dst.copy_from(leaves, dst_x: 8 + rand(96), dst_y: rand(64)) }
     when 'Spruce'
-      3.times{ |i| dst.copy_from(leaves, dst_x: 16+w*i,   dst_y: 48) }
-      4.times{ |i| dst.copy_from(leaves, dst_x:  0+w*i,   dst_y: 64) }
+      3.times{ |i| dst.copy_from(leaves, dst_x: 16+w*i,   dst_y: 48+rand(8)-4) }
+      4.times{ |i| dst.copy_from(leaves, dst_x:  0+w*i,   dst_y: 64+rand(8)-4, src_height: 16+rand(8)) }
     else
       2.times { |i| dst.copy_from(leaves, dst_x: 32+w*i, dst_y: rand(4)) }
       3.times { |i| dst.copy_from(leaves, dst_x: 16+w*i, dst_y: 12+rand(8)) }
@@ -128,8 +132,16 @@ class TreeMaker
   def make!
 #    stump.save("#{@type}_Stump.png")
 #    leafless.save("#{@type}_Leafless.png")
-    4.times{ |i| immature.save("#{@type}_Immature#{('A'.ord+i).chr}.png") }
-    4.times{ |i| mature.save("#{@type}#{('A'.ord+i).chr}.png") }
+    4.times do |i|
+      fname = "#{@type}_Immature#{('A'.ord+i).chr}.png"
+      immature.save(fname)
+      puts "[.] #{fname}"
+    end
+    4.times do |i|
+      fname = "#{@type}#{('A'.ord+i).chr}.png"
+      mature.save(fname)
+      puts "[.] #{fname}"
+    end
   end
 end
 
