@@ -1,0 +1,24 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Blocky/Trees/Bamboo</texPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/Bamboo_Immature</immatureGraphicPath>
+      <choppedThingDef IsNull="True" />
+      <visualSizeRange>1.5~2.2</visualSizeRange>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Bamboo_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>
