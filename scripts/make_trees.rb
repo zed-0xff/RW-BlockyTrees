@@ -69,7 +69,6 @@ class TreeMaker
       dst.copy_from(leaves, dst_x: 64,      dst_y: 32)
     when 'Mangrove'
       dst.copy_from(leaves, dst_x: 48,      dst_y: 8)
-      srand(2221)
       5.times { dst.copy_from(leaves, dst_x: 16 + rand(64), dst_y: rand(48)) }
     when 'Spruce'
       dst.copy_from(leaves, dst_x: 56,      dst_y: 0, dst_width: 16, src_width: 32, dst_height: 16)
@@ -81,13 +80,13 @@ class TreeMaker
       dst.copy_from(leaves, dst_x: 48+20, dst_y: 8+32)
     else
       step = type == 'Pine' ? 16 : 32
-      dst.copy_from(leaves, dst_x: 48,      dst_y: 8)
-      dst.copy_from(leaves, dst_x: 48-step, dst_y: step)
-      dst.copy_from(leaves, dst_x: 48+step, dst_y: step)
+      dst.copy_from(leaves, dst_x: 48,      dst_y: 4+rand(12))
+      dst.copy_from(leaves, dst_x: 48-step, dst_y: step-4+rand(8))
+      dst.copy_from(leaves, dst_x: 48+step, dst_y: step-4+rand(8))
       if type == 'Jungle'
         dst.copy_from(leaves, dst_x: 48,    dst_y: step)
       else
-        dst.copy_from(leaves, dst_x: 48,    dst_y: step*1.5)
+        dst.copy_from(leaves, dst_x: 48,    dst_y: step*1.5+rand(8)-4)
       end
     end
     dst
@@ -117,22 +116,20 @@ class TreeMaker
       3.times{ |i| dst.copy_from(leaves, dst_x: 16+w*i,   dst_y: 48) }
       4.times{ |i| dst.copy_from(leaves, dst_x:  0+w*i,   dst_y: 64) }
     else
-      2.times { |i| dst.copy_from(leaves, dst_x: 32+w*i, dst_y: 2) }
-      3.times { |i| dst.copy_from(leaves, dst_x: 16+w*i, dst_y: 16) }
+      2.times { |i| dst.copy_from(leaves, dst_x: 32+w*i, dst_y: rand(4)) }
+      3.times { |i| dst.copy_from(leaves, dst_x: 16+w*i, dst_y: 12+rand(8)) }
 
-      y = type == 'Birch' ? 32 : 24
-      4.times { |i| dst.copy_from(leaves, dst_x:    w*i, dst_y: y) }
+      y = 22 + rand(9)
+      4.times { |i| dst.copy_from(leaves, dst_x:    w*i, dst_y: y+rand(4)) }
     end
     dst
   end
 
   def make!
-    stump.save("Textures/Blocky/Trees/#{@type}_Stump.png")
-    leafless.save("Textures/Blocky/Trees/#{@type}_Leafless.png")
-    if type != 'Oak'
-      immature.save("Textures/Blocky/Trees/#{@type}_Immature.png")
-      mature.save("Textures/Blocky/Trees/#{@type}.png")
-    end
+#    stump.save("#{@type}_Stump.png")
+#    leafless.save("#{@type}_Leafless.png")
+    4.times{ |i| immature.save("#{@type}_Immature#{('A'.ord+i).chr}.png") }
+    4.times{ |i| mature.save("#{@type}#{('A'.ord+i).chr}.png") }
   end
 end
 
