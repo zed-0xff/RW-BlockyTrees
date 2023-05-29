@@ -1,0 +1,30 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Blocky/Trees/Birch</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.35, 0.13)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]/plant</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/Birch_Immature</immatureGraphicPath>
+      <choppedThingDef>BlockyTrees_ChoppedStump_Birch</choppedThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Birch_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>

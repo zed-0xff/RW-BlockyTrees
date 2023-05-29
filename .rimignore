@@ -1,5 +1,8 @@
 # this file is created by YADA mod - https://steamcommunity.com/sharedfiles/filedetails/?id=2971543841
 # files listed here will be skipped when mod is uploaded to the Steam Workshop
+scripts
+TODO
+
 .DS_Store
 .git
 .gitattributes

@@ -2,9 +2,56 @@
 <Defs>
   <ThingDef ParentName="StumpChoppedBase">
     <defName>BlockyTrees_ChoppedStump_Oak</defName>
-    <label>chopped oak stump</label>
     <graphicData>
       <texPath>Blocky/Trees/Oak_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Birch</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/Birch_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Pine</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/Spruce_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Palm</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/Jungle_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Willow</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/Mangrove_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Drago</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/Acacia_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="StumpChoppedBase">
+    <defName>BlockyTrees_ChoppedStump_Poplar</defName>
+    <graphicData>
+      <texPath>Blocky/Trees/DarkOak_Stump</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>

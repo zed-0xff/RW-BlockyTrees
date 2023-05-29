@@ -1,0 +1,31 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeDrago"]/label</xpath>
+    <value>
+      <label>acacia tree</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeDrago"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Blocky/Trees/Acacia</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.35, 0.13)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeDrago"]/plant</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/Acacia_Immature</immatureGraphicPath>
+      <choppedThingDef>BlockyTrees_ChoppedStump_Drago</choppedThingDef>
+      <leaflessGraphicPath>Blocky/Trees/Acacia_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>

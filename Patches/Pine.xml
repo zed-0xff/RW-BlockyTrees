@@ -1,0 +1,37 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]/label</xpath>
+    <value>
+      <label>spruce tree</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Blocky/Trees/Spruce</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.35, 0.13)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]/plant</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/Spruce_Immature</immatureGraphicPath>
+      <choppedThingDef>BlockyTrees_ChoppedStump_Pine</choppedThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]/plant/pollutedGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Spruce_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>

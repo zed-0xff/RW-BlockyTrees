@@ -1,0 +1,31 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePalm"]/label</xpath>
+    <value>
+      <label>jungle tree</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePalm"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Blocky/Trees/Jungle</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shadowData>
+          <volume>(0.2, 0.35, 0.13)</volume>
+          <offset>(-0.03,0,-0.44)</offset>
+        </shadowData>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreePalm"]/plant</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/Jungle_Immature</immatureGraphicPath>
+      <choppedThingDef>BlockyTrees_ChoppedStump_Palm</choppedThingDef>
+      <leaflessGraphicPath>Blocky/Trees/Jungle_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>
