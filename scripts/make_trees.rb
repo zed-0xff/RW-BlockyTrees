@@ -43,6 +43,7 @@ class TreeMaker
         src.each_pixel do |c,x,y|
           next if c.transparent?
           c.r = c.b = 0 # make them green (orignally grayscale)
+          c.g -= 40     # darken
           src[x,y] = c
         end
 
