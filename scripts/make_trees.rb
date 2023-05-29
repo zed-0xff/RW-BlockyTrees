@@ -85,12 +85,12 @@ class TreeMaker
     else
       step = type == 'Pine' ? 16 : 32
       dst.copy_from(leaves, dst_x: 48,      dst_y: 4+rand(12))
-      dst.copy_from(leaves, dst_x: 48-step, dst_y: step-4+rand(8))
-      dst.copy_from(leaves, dst_x: 48+step, dst_y: step-4+rand(8))
+      dst.copy_from(leaves, dst_x: 48-step, dst_y: step-4+rand(12))
+      dst.copy_from(leaves, dst_x: 48+step, dst_y: step-4+rand(12))
       if type == 'Jungle'
         dst.copy_from(leaves, dst_x: 48,    dst_y: step)
       else
-        dst.copy_from(leaves, dst_x: 48,    dst_y: step*1.5+rand(8)-4)
+        dst.copy_from(leaves, dst_x: 48,    dst_y: step*(1.2+rand/5)+rand(8)-4)
       end
     end
     dst
