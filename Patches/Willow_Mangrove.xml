@@ -11,7 +11,7 @@
     <value>
       <graphicData>
         <texPath>Blocky/Trees/Mangrove</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
+        <graphicClass>Graphic_Random</graphicClass>
         <shadowData>
           <volume>(0.2, 0.35, 0.13)</volume>
           <offset>(-0.03,0,-0.44)</offset>
