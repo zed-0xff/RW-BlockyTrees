@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require 'zpng'
+require 'fileutils'
 
 class TreeMaker
   attr_reader :type, :mc_type
@@ -35,6 +36,9 @@ class TreeMaker
         dst
       end
   end
+
+  # TODO
+  DARK_GREEN = 0x00aa00
 
   def leaves
     @leaves ||=
@@ -133,13 +137,18 @@ class TreeMaker
   def make!
 #    stump.save("#{@type}_Stump.png")
 #    leafless.save("#{@type}_Leafless.png")
+    dirname = "Textures/Blocky/Trees/#{@type}_Immature"
+    FileUtils.mkdir_p dirname
     4.times do |i|
-      fname = "#{@type}_Immature#{('A'.ord+i).chr}.png"
+      fname = File.join(dirname, "#{@type}_Immature#{('A'.ord+i).chr}.png")
       immature.save(fname)
       puts "[.] #{fname}"
     end
+
+    dirname = "Textures/Blocky/Trees/#{@type}"
+    FileUtils.mkdir_p dirname
     4.times do |i|
-      fname = "#{@type}#{('A'.ord+i).chr}.png"
+      fname = File.join(dirname, "#{@type}#{('A'.ord+i).chr}.png")
       mature.save(fname)
       puts "[.] #{fname}"
     end
