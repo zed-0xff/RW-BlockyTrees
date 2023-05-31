@@ -1,0 +1,29 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Blocky/Trees/BerryPlant</texPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/BerryPlant_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
+    <value>
+      <immatureGraphicPath>Blocky/Trees/BerryPlant_Immature</immatureGraphicPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/visualSizeRange</xpath>
+    <value>
+      <visualSizeRange>0.8~1.2</visualSizeRange>
+    </value>
+  </Operation>
+</Patch>
