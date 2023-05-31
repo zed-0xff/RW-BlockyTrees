@@ -1,0 +1,22 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Brambles"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Blocky/Trees/Brambles</texPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Brambles_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Brambles"]/plant/pollutedGraphicPath</xpath>
+    <value>
+      <pollutedGraphicPath>Blocky/Trees/Brambles_Leafless</pollutedGraphicPath>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Bush"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Blocky/Trees/Bush</texPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Bush_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+</Patch>

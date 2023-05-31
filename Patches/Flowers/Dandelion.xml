@@ -1,0 +1,25 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Dandelion"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Blocky/Trees/Dandelion</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Dandelion"]/plant/maxMeshCount</xpath>
+    <value>
+      <maxMeshCount>9</maxMeshCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Dandelion"]/plant/visualSizeRange</xpath>
+    <value>
+      <visualSizeRange>0.4~0.5</visualSizeRange>
+    </value>
+  </Operation>
+</Patch>

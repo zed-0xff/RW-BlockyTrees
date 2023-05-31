@@ -1,0 +1,29 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Grass"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Blocky/Trees/Grass</texPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Grass"]/plant/leaflessGraphicPath</xpath>
+    <value>
+      <leaflessGraphicPath>Blocky/Trees/Grass_Leafless</leaflessGraphicPath>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Grass"]/plant/maxMeshCount</xpath>
+    <value>
+      <maxMeshCount>4</maxMeshCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_Grass"]/plant/visualSizeRange</xpath>
+    <value>
+      <visualSizeRange>0.7~0.85</visualSizeRange>
+    </value>
+  </Operation>
+</Patch>
