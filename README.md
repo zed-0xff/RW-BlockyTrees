@@ -27,7 +27,7 @@ No new wood types or any other new things here.
 
 ## You may also like...
 
-[![Market Value Filter](https://steamuserimages-a.akamaihd.net/ugc/2031731300509143773/7E3F3357000603DE56A483382D3D403B9F805248/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2960434569)
+[![Blocky Doors](https://steamuserimages-a.akamaihd.net/ugc/2023851270029807877/9ADACA68FC61BB8B29FB66874A734578EF37EDD7/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2983962533)
 [![CPS: Compact Pawn Storage](https://steamuserimages-a.akamaihd.net/ugc/2031730758744755960/6EBD5542F16F51143F66B0123588C3CD002945A4/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2974541112)
 [![YADA](https://steamuserimages-a.akamaihd.net/ugc/2031731300519719867/4E551B5E8A5F51182BD2D8830C7E9E180D0634BC/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2971543841)
 
